@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Column Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <header class="header">
+            <input type="checkbox" id="navBtn">
+
+            <!-- ヘッダーロゴ -->
+            <div class="header-inner">
+                <a class="header-logo" href="./index.html">
+                   <img src="images/AROKON.PNG" alt="アロコン＆アロキュウ"><!--width=""  height=""　-->
+                </a>
+                <button class="toggle-menu-button"></button>
+            </div>
+
+            <div class="border-radius"></div>
+
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="nav">
+
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer_input" class="drawer_open"><span></span></label>
+
+                <!-- メニュー -->
+                  <nav class="nav_content"> 
+					<ul>
+                        <li class="nav_item"><a href="#home">ポケモンカードとは</a></li>
+                        <li class="nav_item"><a href="#about">カード紹介</a></li>
+                        <li class="nav_item"><a href="#works">？？？？</a></li>
+                        <li class="nav_item"><a href="#contact">？？？？</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <picture>
+            <source media="(min-width: 640px)" srcset="images/pokeka_temoto.jpg">
+            <img src="pokeka_temoto.jpg" alt="ポケカ手元">
+        </picture>
+
+        <main>
+            <section id="home" class="sec01">
+                <br></br>
+                <h2 class="center">
+                    <span class="pale-color1">ポケモンカードとは</span>
+                </h2>
+                <p class="center">
+                    <br><span>ポケットモンスターを</span>TCG(トレーディングカードゲーム)化<span>したものです。</span></br>
+                    <br><span>グッズやサポートを駆使して</span><span>先に相手のポケモンを</span><span>多く倒した方の勝ちです！</span></br>
+                    <br></br>
+                    <br></br>
+                </p>
+            </section>
+
+            <section id="about"class="sec02">
+                <h2 class="center">
+                    <span class="pale-color2">カード紹介</span>
+                </h2>
+                <div class="kakoi">
+                    <div class="card-container">
+                        <div>
+                            <img src="images/nyaoha_pokeka.png" class="card-img"> 
+                        </div>
+                    <p class="card-text">
+                        <br>
+                            <img src="images/tane_icon.png" class="card_icon">
+                        <br>
+                        <br>左上に「たね」と表記しているカードです。</br>
+                        <br>出しやすい代わりに体力が低く、技のダメージも弱いです。</br>
+                        <br>名前の右上にある数字が体力で、技の右にある数字が技のダメージです。</br>
+                    </p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="kakoi">
+                <div class="card-container">
+                    <div>
+                        <img src="images/nyaro-te_pokeka.png"  class="card-img2"> 
+                    </div>
+                <p class="card-text">
+                    <br>
+                        <img src="images/1shinka_icon.png" class="card_icon">
+                    <br>
+                    <br>左上に「○進化」と表記しているカードです。</br>
+                    <br>特定のポケモンのカードの上に乗せることで進化できます</br>
+                    <br>しかし場に出したばかりのポケモンから進化できず、１ターン待たないと進化できません。</br>
+                    <br>進化前と比べ体力が増え、技のダメージも性能も強くなります。</br>
+                </p>
+                </div>
+            </div>
+
+            <section id="works" class="sec03">
+                <h2>WORKS</h2>
+                <p>さらにコンテンツが入ります。</p>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <div class="container">
+                </div>
+            </section>
+
+            <section id="contact" class="sec04">
+                <h2>CONTACT</h2>
+                <p>さらにコンテンツが入ります。</p>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+        </main>
+
+        <footer>
+            <p>© My Site </p>
+        </footer>
+        <a href="#" class="pagetop">▲</a>
+    </div>
+</body>
+
+</html>
